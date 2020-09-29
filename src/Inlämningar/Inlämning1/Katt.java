@@ -12,13 +12,13 @@ public class Katt extends Djur{
 
     private int matPortion = beräknaFoder(getViktIgram(getVikt()), 150);
 
-    public Katt(String namn, int vikt){
-        super(namn, vikt);
+    public Katt(String namn, int vikt, TypAvFoder foder){
+        super(namn, vikt, foder);
     }
 
     @Override
     public void printFoder() {
-        JOptionPane.showMessageDialog(null, matPortion + " gram av " + TypAvFoder.KATTFODER);
+        JOptionPane.showMessageDialog(null, matPortion + " gram av " + getTypAvFoder().stringTypAvFoder);
     }
 }
 

@@ -15,11 +15,11 @@ public class MatDags {
 
     public MatDags(){
         //Polymorfism vid instansiering av nya djur
-        Djur Sixten = new Hund("Sixten", 5);
-        Djur Dogge = new Hund("Dogge", 10);
-        Djur Venus = new Katt("Venus", 5);
-        Djur Ove = new Katt("Ove", 3);
-        Djur Hypno = new Orm("Hypno", 1);
+        Djur Sixten = new Hund("Sixten", 5, TypAvFoder.HUNDFODER);
+        Djur Dogge = new Hund("Dogge", 10, TypAvFoder.HUNDFODER);
+        Djur Venus = new Katt("Venus", 5, TypAvFoder.KATTFODER);
+        Djur Ove = new Katt("Ove", 3, TypAvFoder.KATTFODER);
+        Djur Hypno = new Orm("Hypno", 1, TypAvFoder.ORMPELLETS);
 
         List<Djur> allaDjur = new ArrayList<>();
         //allaDjur.add(Sixten = new Hund("Sixten", 5));

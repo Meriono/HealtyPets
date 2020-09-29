@@ -11,13 +11,9 @@ public enum TypAvFoder {
     KATTFODER("kattfoder"),
     ORMPELLETS("ormpellets");
 
-    private final String typAvFoder;
+    public final String stringTypAvFoder;
 
     TypAvFoder(String foder){
-        typAvFoder = foder;
-    }
-
-    public String getStringTypAvFoder(){
-        return typAvFoder;
+        stringTypAvFoder = foder;
     }
 }

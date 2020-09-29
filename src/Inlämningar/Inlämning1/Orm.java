@@ -10,13 +10,13 @@ import javax.swing.*;
  */
 public class Orm extends Djur{
 
-    public Orm(String namn, int vikt){
-        super(namn, vikt);
+    public Orm(String namn, int vikt, TypAvFoder foder){
+        super(namn, vikt, foder);
     }
 
     @Override
     public void printFoder() {
-        JOptionPane.showMessageDialog(null, "20 gram av " + TypAvFoder.ORMPELLETS);
+        JOptionPane.showMessageDialog(null, "20 gram av " + getTypAvFoder().stringTypAvFoder);
     }
 }
 

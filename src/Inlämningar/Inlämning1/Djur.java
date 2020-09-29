@@ -11,18 +11,22 @@ abstract class Djur implements IFoder {
     private int vikt;
     private int viktIgram;
     private int matMängd;
+    private TypAvFoder foder;
 
     public Djur(){}
 
     public Djur(String namn, int vikt, TypAvFoder foder){
         this.namn = namn;
         this.vikt = vikt;
+        this.foder = foder;
     }
 
     //Getterna är inkapsling
     public String getNamn() {
         return namn;
     }
+
+    public TypAvFoder getTypAvFoder(){return foder;}
 
     public int getVikt() {
         return vikt;

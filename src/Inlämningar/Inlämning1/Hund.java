@@ -11,13 +11,13 @@ import javax.swing.*;
 public class Hund extends Djur{
     private int matPortion = beräknaFoder(getViktIgram(getVikt()), 100);
 
-    public Hund(String namn, int vikt){
-        super(namn, vikt);
+    public Hund(String namn, int vikt, TypAvFoder foder){
+        super(namn, vikt, foder);
     }
 
     @Override
     public void printFoder() {
-        JOptionPane.showMessageDialog(null, matPortion + " gram av " + TypAvFoder.HUNDFODER.getStringTypAvFoder());
+        JOptionPane.showMessageDialog(null, matPortion + " gram av " + getTypAvFoder().stringTypAvFoder);
     }
 }
 
