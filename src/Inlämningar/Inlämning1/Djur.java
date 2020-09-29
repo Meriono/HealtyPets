@@ -15,7 +15,7 @@ abstract class Djur implements IFoder {
 
     public Djur(){}
 
-    public Djur(String namn, int vikt, TypAvFoder foder){
+    public Djur(String namn, int vikt, TypAvFoder foder) {
         this.namn = namn;
         this.vikt = vikt;
         this.foder = foder;
@@ -26,15 +26,15 @@ abstract class Djur implements IFoder {
         return namn;
     }
 
-    public TypAvFoder getTypAvFoder(){return foder;}
+    public TypAvFoder getTypAvFoder() { return foder; }
 
     public int getVikt() {
         return vikt;
     }
-    public int beräknaFoder(int vikt, int beräkning){
+    public int beräknaFoder(int vikt, int beräkning) {
         return matMängd = vikt/beräkning;
     }
-    public int getViktIgram(int vikt){
+    public int getViktIgram(int vikt) {
         return viktIgram = vikt * 1000;
     }
 

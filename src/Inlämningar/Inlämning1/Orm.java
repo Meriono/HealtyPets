@@ -8,7 +8,7 @@ import javax.swing.*;
  * Time: 09:10
  * Project: Sprint1
  */
-public class Orm extends Djur{
+public class Orm extends Djur {
 
     public Orm(String namn, int vikt, TypAvFoder foder){
         super(namn, vikt, foder);

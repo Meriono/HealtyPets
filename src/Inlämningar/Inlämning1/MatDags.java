@@ -11,9 +11,8 @@ import java.util.List;
  * Project: Sprint1
  */
 public class MatDags {
-    String input;
 
-    public MatDags(){
+    public MatDags() {
         //Polymorfism vid instansiering av nya djur
         Djur Sixten = new Hund("Sixten", 5, TypAvFoder.HUNDFODER);
         Djur Dogge = new Hund("Dogge", 10, TypAvFoder.HUNDFODER);
@@ -49,7 +48,7 @@ public class MatDags {
         }
     }
 
-    public boolean checkInput(String input){
+    public boolean checkInput(String input) {
         if(input == null){
             JOptionPane.showMessageDialog(null, "Du har valt att avbryta programmet");
             System.exit(0);

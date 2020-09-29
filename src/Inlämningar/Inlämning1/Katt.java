@@ -8,8 +8,7 @@ import javax.swing.*;
  * Time: 09:10
  * Project: Sprint1
  */
-public class Katt extends Djur{
-
+public class Katt extends Djur {
     private int matPortion = beräknaFoder(getViktIgram(getVikt()), 150);
 
     public Katt(String namn, int vikt, TypAvFoder foder){
