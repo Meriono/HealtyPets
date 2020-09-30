@@ -7,6 +7,7 @@ package Inlämningar.Inlämning1;
  * Project: Sprint1
  */
 abstract class Djur implements IFoder {
+    //Inkapsling
     private String namn;
     private int vikt;
     private int viktIgram;
@@ -21,7 +22,6 @@ abstract class Djur implements IFoder {
         this.foder = foder;
     }
 
-    //Getterna är inkapsling
     public String getNamn() {
         return namn;
     }
