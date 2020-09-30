@@ -16,7 +16,7 @@ public class Orm extends Djur {
 
     @Override
     public void printFoder() {
-        JOptionPane.showMessageDialog(null, "20 gram av " + getTypAvFoder().stringTypAvFoder);
+        JOptionPane.showMessageDialog(null, "20 gram av " + getTypAvFoder().stringTypAvFoder); // Kallar på ormens enum i String format för att skriva ut detta
     }
 }
 
